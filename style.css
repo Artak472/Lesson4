@@ -20,6 +20,15 @@ body {
     font-size: 1.25em;
 }
 
+#nick {
+    text-align: center;
+    border: 2px solid #3498db;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    font-size: 1.25em;
+}
+
 #submit {
     width: 175px;
     height: 50px;

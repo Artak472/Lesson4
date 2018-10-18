@@ -3,11 +3,13 @@ function main() {
 	var chatDiv = document.getElementById('chat');
 	var input = document.getElementById('message');
 	var button = document.getElementById('submit');
+	var nickname = document.getElementById('nick');
  
 	function handleSubmit(evt) {
 		var val = input.value;
-		if (val != "") {
-			socket.emit("send message", val);
+		var nick = nickname.value;
+		if (val != "" && nick != "") {
+			socket.emit("send message", nick + ": " + val);
 		}
 	}
 	button.onclick = handleSubmit;

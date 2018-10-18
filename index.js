@@ -18,5 +18,4 @@ io.on('connection', function (socket) {
         messages.push(data);
         io.sockets.emit("display message", data);
     })
- });
- 
+});
